@@ -46,6 +46,14 @@ npm run build
 
 Build artifacts will be placed in the `dist/` directory.
 
+## Personal Notes
+
+> These are my own notes for working with this fork locally.
+
+- I primarily use this on Firefox and Chrome for testing.
+- To quickly reload the extension during development, use the browser's extension page refresh button rather than restarting the browser.
+- Useful for debugging: open the background page devtools via the extension management page.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting pull requests.
