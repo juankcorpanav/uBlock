@@ -53,6 +53,8 @@ Build artifacts will be placed in the `dist/` directory.
 - I primarily use this on Firefox and Chrome for testing.
 - To quickly reload the extension during development, use the browser's extension page refresh button rather than restarting the browser.
 - Useful for debugging: open the background page devtools via the extension management page.
+- When testing filter changes, `about:blank` is handy as a neutral page that won't trigger any existing rules.
+- To sync filter lists with upstream, run `git fetch upstream && git merge upstream/master` then rebuild.
 
 ## Contributing
 
