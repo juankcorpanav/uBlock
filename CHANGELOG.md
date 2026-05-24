@@ -43,5 +43,7 @@
 - [Improve `prevent-addEventListener` scriptlet](https://github.com/gorhill/uBlock/commit/1977196abe)
 - [Add `nitropay_ads.js` shim](https://github.com/gorhill/uBlock/commit/6af8a457ed)
 
-<!-- Personal note: tracking 1.69.0 closely — the `trusted-click-element` extraMatch fix and
-     `prevent-addEventListener` improvement both address issues I was hitting on a few sites. -->
+<!-- Personal note: I'm tracking this fork primarily to study the scriptlet
+     system and cosmetic filtering pipeline. The `trusted-*` scriptlets added
+     in 1.69-1.70 are especially interesting for understanding how uBlock
+     handles privileged operations safely. -->
