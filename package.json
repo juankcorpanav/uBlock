@@ -1,32 +1,38 @@
 {
-  "name": "uBlock",
+  "name": "ublock",
   "version": "1.0.0",
-  "description": "npm dev tools",
-  "type": "module",
+  "description": "uBlock - Fork of gorhill/uBlock. An efficient blocker for Chromium and Firefox.",
+  "main": "src/js/background.js",
   "scripts": {
-    "lint": "eslint --no-warn-ignored --ignore-pattern \"**/lib/\" --ignore-pattern \"**/npm/\" -- \"./src/js/*.js\" \"./src/js/**/*.js\" \"./**/*.json\" \"./platform/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node tools/build.js",
+    "build:chromium": "node tools/build.js chromium",
+    "build:firefox": "node tools/build.js firefox",
+    "lint": "eslint src/js/**/*.js",
+    "test": "node tools/tests.js",
+    "clean": "node tools/clean.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gorhill/uBlock.git"
+    "url": "https://github.com/uBlock-dev/uBlock.git"
   },
-  "author": "Raymond Hill",
-  "license": "GPLv3",
-  "bugs": {
-    "url": "https://github.com/gorhill/uBlock/issues"
-  },
-  "homepage": "https://github.com/gorhill/uBlock#readme",
-  "engines": {
-    "node": ">=22",
-    "npm": ">=11"
-  },
+  "keywords": [
+    "ublock",
+    "ad-blocker",
+    "content-blocker",
+    "browser-extension",
+    "privacy"
+  ],
+  "author": "uBlock Contributors",
+  "license": "GPL-3.0",
   "devDependencies": {
-    "@eslint/compat": "^1.2.4",
-    "@eslint/js": "^9.17.0",
-    "@eslint/json": "^0.13.1",
-    "eslint": "^9.34.0",
-    "eslint-formatter-compact": "^8.40.0",
-    "globals": "^15.14.0"
-  }
+    "eslint": "^8.57.0",
+    "eslint-plugin-compat": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ]
 }
