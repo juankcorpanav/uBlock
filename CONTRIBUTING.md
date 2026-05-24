@@ -43,3 +43,9 @@ Quick reference for getting this fork running locally:
 1. Clone the repo and load it as an unpacked extension in `chrome://extensions` (enable Developer Mode first).
 2. After making changes, click the refresh icon on the extension card to reload.
 3. Use `about:blank` with the extension popup open to test changes without side effects from page content.
+
+#### Useful Debug Tips
+
+- Open the extension's background page via `chrome://extensions` → "service worker" (MV3) or "background page" (MV2) to access the console.
+- Filtering logs are available in the uBO logger (the icon that looks like a scroll in the popup).
+- When testing filter rules, use the logger to confirm whether a rule is actually matching.
