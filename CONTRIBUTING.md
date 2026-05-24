@@ -35,3 +35,11 @@ For issues related to the Manifest Version 3 (MV3) variant, report them in the [
 ### Personal Notes (Fork)
 
 > **Note:** This is a personal fork for learning and experimentation. Changes here are not intended for upstream contribution. For reference, the upstream project lives at [gorhill/uBlock](https://github.com/gorhill/uBlock).
+
+#### Local Development Setup
+
+Quick reference for getting this fork running locally:
+
+1. Clone the repo and load it as an unpacked extension in `chrome://extensions` (enable Developer Mode first).
+2. After making changes, click the refresh icon on the extension card to reload.
+3. Use `about:blank` with the extension popup open to test changes without side effects from page content.
