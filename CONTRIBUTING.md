@@ -29,3 +29,9 @@ For issues specifically about uBO, please use the [uBO issue tracker](https://gi
 #### uBO Lite (uBOL) Issues
 
 For issues related to the Manifest Version 3 (MV3) variant, report them in the [uBOL issue tracker](https://github.com/uBlockOrigin/uBOL-home/issues).
+
+---
+
+### Personal Notes (Fork)
+
+> **Note:** This is a personal fork for learning and experimentation. Changes here are not intended for upstream contribution. For reference, the upstream project lives at [gorhill/uBlock](https://github.com/gorhill/uBlock).
