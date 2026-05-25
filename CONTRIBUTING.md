@@ -49,3 +49,9 @@ Quick reference for getting this fork running locally:
 - Open the extension's background page via `chrome://extensions` → "service worker" (MV3) or "background page" (MV2) to access the console.
 - Filtering logs are available in the uBO logger (the icon that looks like a scroll in the popup).
 - When testing filter rules, use the logger to confirm whether a rule is actually matching.
+- To quickly reset all settings to default during testing, go to the Dashboard → Settings → "Reset to default settings". Useful when a config change causes unexpected behavior.
+
+#### Branches in This Fork
+
+- `main` — tracks upstream as closely as possible
+- `personal` — my working branch with any local tweaks or experiments
